@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 
 LOCAL_APPS = [
     'common.apps.CommonConfig',
+    'users.apps.UsersConfig',
 ]
 
 THIRD_PARTY_APPS = [
@@ -126,7 +127,7 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
-# AUTH_USER_MODEL = 'users.BaseUser'
+AUTH_USER_MODEL = 'users.User'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
